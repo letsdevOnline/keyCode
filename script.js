@@ -8,7 +8,7 @@ function onKeyDown(e) {
          <small>e.code</small>
          <p>${e.key === " " ? "Space" : e.key}</p>
          <p>${e.keyCode}</p>
-         <p>${e.code}f</p>
+         <p>${e.code}</p>
       </div>
    `;
 }
