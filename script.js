@@ -1,19 +1,14 @@
-const insert = document.querySelector("#insert");
+const container = document.querySelector(".container");
+
 function onKeyDown(e) {
-   insert.innerHTML = `
-   <div class="key">
-         ${e.key === " " ? "Space" : e.key}
+   container.innerHTML = `
+      <div class="shown">
          <small>e.key</small>
-      </div>
-
-      <div class="key">
-         ${e.keyCode}
          <small>e.keyCode</small>
-      </div>
-
-      <div class="key">
-         ${e.code}
          <small>e.code</small>
+         <p>${e.key === " " ? "Space" : e.key}</p>
+         <p>${e.keyCode}</p>
+         <p>${e.code}f</p>
       </div>
    `;
 }
